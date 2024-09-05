@@ -16,7 +16,7 @@
 2. 设置自己的目标仓库信息
 
 #### 需要设置一些变量`variables`
-- **TARGET_NAMESPACE**: 目标`NAMESPACE`, 该例子中应该设置为`mj-mirror`
+- **TARGET_NAMESPACE**: 目标`NAMESPACE`, 该例子中应该设置为`r-mirror`
 - **TARGET_REGISTRY**: 目标仓库, 该例子中应该设置为`registry.cn-hangzhou.aliyuncs.com`
 - **TARGET_REGISTRY_USER**: 目标仓库的用户名
  
@@ -27,10 +27,9 @@
 3. 按照直接使用的方式在自己的仓库提交 issue
 
 ### 直接使用
-提交一个 issue 即可, issue 内容为你无法正常下载的镜像，[示例](https://github.com/miaojuncn/image-mirror/issues/1)如下: 
-![image](https://github.com/user-attachments/assets/b3de9437-dc6e-482d-bd81-e6edaa27d6e7)
+提交一个 issue 即可, issue 内容为你无法正常下载的镜像
 
-就会触发 GitHub action, 同步镜像到`registry.cn-hangzhou.aliyuncs.com`(默认同步到`mj-mirror`的`NAMESPACE`下)
+就会触发 GitHub action, 同步镜像到`registry.cn-hangzhou.aliyuncs.com`(默认同步到`r-mirror`的`NAMESPACE`下)
 
 GitHub action bot 会在 action 完成后, 提示同步成功的镜像, 并且定期关闭 issue
 
